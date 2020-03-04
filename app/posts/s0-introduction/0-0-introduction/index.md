@@ -1,16 +1,37 @@
 ---
-title: What is this about?
+title: Introduction
 date: 2012-08-20
 layout: post.html
-permalink: /
+permalink: 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tellus finibus ex maximus ultrices at vel nunc. Aenean in leo et diam viverra faucibus pharetra in tortor. Integer rhoncus non libero eu varius. Praesent sagittis lacus vel volutpat tincidunt. Fusce rhoncus blandit libero, nec molestie velit tempus ut.
+The guide describes how to label road safety classes in street view images. This labeling is in support to the Road Safety program to use computer vision to detect road features for road safety audits and assesments.
 
-Phasellus imperdiet libero posuere quam tincidunt, eu malesuada quam consequat. Vestibulum libero nisi, eleifend a mauris sit amet, condimentum pharetra justo. Praesent ultrices nunc sit amet metus consequat aliquam. Nullam aliquet venenatis elit eget congue. Pellentesque facilisis ut lacus quis aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sed sem tortor. Aliquam erat ex, vestibulum eget elementum at, suscipit et diam.
+## Labeling tools
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin aliquet condimentum pellentesque. Nam nec tristique est. Vestibulum auctor risus nisl, at fermentum massa mollis ut. Morbi posuere ex tempor nunc consectetur, vel dictum lectus faucibus. In viverra mollis nibh, sed porta tortor. Morbi nec bibendum urna. Nunc in est in justo dignissim vulputate vel sed purus.
+### Computer Vision Annotation Tool (CVAT)
 
-Aenean bibendum sed ex ut cursus. Morbi non diam id mauris lacinia blandit in sed ante. Nunc gravida ligula ut erat porta pretium. Sed eu consectetur ex, ac pharetra mi. Duis malesuada nulla ante, ac varius sem mattis non. Nullam fringilla ipsum ut sapien congue volutpat a quis nunc. Nullam nibh lectus, elementum volutpat sem rhoncus, sollicitudin iaculis dui.
+We're using the CVAT labeling platform to perform the annotations. The [CVAT](https://github.com/opencv/cvat) tools have extensively documented the annotation process. See their tool's [readme guide](https://github.com/opencv/cvat/blob/develop/README.md) or their [youtube video](https://www.youtube.com/watch?v=L9_IvUIHGwM&feature=youtu.be).
 
-Etiam fermentum placerat fringilla. Praesent ut nisl tortor. Morbi ornare libero nec rutrum rutrum. Vivamus efficitur pulvinar luctus. Vivamus mollis semper ultricies. Maecenas id pellentesque dui. Suspendisse mattis lectus nulla. Suspendisse maximus lorem augue, vehicula fermentum enim fringilla id. Proin tincidunt libero sit amet rhoncus suscipit. Integer eget malesuada dui. Mauris et neque nec enim commodo porttitor a non metus. Nam viverra felis in risus sagittis scelerisque.
+**CVAT Tips**
+
+- Each task should only have one annotator working on it at a time. If 2 or more annotators are working on the same task, there might be problems with labels getting overwritten.
+
+- In the CVAT tool you can use shortcuts, for instance:
+    - "N" --> create a shape
+    - "F" --> move to the next image
+    - "D" --> move to the previous image or
+    - "CTRL + S" --> save the work 
+
+Also, you can find the full shortcuts in this [web page.](https://github.com/opencv/cvat/blob/develop/cvat/apps/documentation/user_guide.md#shortcuts) 
+
+
+### Mapillary
+
+[Mapillary](https://www.mapillary.com/app/) is the street-level imagery platform that we are using to obtain the street view images. 
+
+**Mapillary Api**
+
+To search and obtain all the Mapillary images from the priority road segments, it is need the [Mapillary sequence key](https://help.mapillary.com/hc/en-us/articles/115001724989-Sequence-key) and the [image keys](https://help.mapillary.com/hc/en-us/articles/115001724549-Image-key).
+
+DevelopmentSeed data team developed some scripts to pass the sequence keys and get the images keys in the sequences to can download them using the [Mapillary API](https://www.mapillary.com/developer/api-documentation/#retrieve-an-image-feature).
