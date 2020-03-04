@@ -1,5 +1,5 @@
 module.exports = {
-  baseurl: 'http://devseed.com/doc-seed',
+  baseurl: 'http://devseed.com/ml-road-safety-labeling',
   title: 'Road Safety Labeling',
   description: 'Guidelines for labeling road safety classes',
 
@@ -7,7 +7,7 @@ module.exports = {
     role: 'In support of',
     name: 'World Bank Group',
     logo: 'wbg-logo-hor-col-grad.png',
-    url: 'https://developmentseed.org'
+    url: 'https://worldbank.org'
   },
 
   sectionsMeta: {
