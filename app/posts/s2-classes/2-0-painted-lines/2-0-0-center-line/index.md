@@ -7,7 +7,7 @@ layout: post.html
 Painted centerline that does not provide a physical barrier between traffic lanes traveling in opposite directions.
 <div class="gallery">
     <figure >
-        <a class="modal-btn"><img src="/assets/graphics/images/center_1.png"></a>
+        <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/center_1.jpg"></a>
         <figcaption> Example 1</figcaption>
     </figure> 
 </div>

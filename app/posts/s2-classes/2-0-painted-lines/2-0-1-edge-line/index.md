@@ -7,7 +7,7 @@ layout: post.html
 Painted lines, usually white, at the edge of the road.
 <div class="gallery">
     <figure >
-        <a class="modal-btn"><img src="/assets/graphics/images/edge_1.png"></a>
+        <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/edge_1.jpg"></a>
         <figcaption> Example 1</figcaption>
     </figure> 
 </div>

@@ -32,7 +32,7 @@ In the road intersections, we need to evaluate the condition of the roads to dec
 
 <div class="gallery">
     <figure >
-        <img src="/assets/graphics/images/case1_1.png">
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case1_1.jpg">
         <figcaption> Example 1: Roads in the same conditions</figcaption>
     </figure>
 </div>
