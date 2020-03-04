@@ -1,23 +1,23 @@
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
     grid-gap: 5px;
     align-items: stretch;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .gallery {
         grid-template-columns: 1fr;
     }
 }
 
 .gallery img {
-    width: 375px;
-    height: 320px;
-    min-width: 375px;
-    max-width: 375px;
-    min-height: 320px;
-    max-height: 320px;
+    width: 450px;
+    height: 380px;
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 380px;
+    max-height: 380px;
 }
 
 .gallery figcaption {
