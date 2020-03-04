@@ -10,4 +10,8 @@ Painted lines, usually white, at the edge of the road.
         <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/edge_1.jpg"></a>
         <figcaption> Example 1</figcaption>
     </figure> 
+    <figure >
+        <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/edge_2.jpg"></a>
+        <figcaption> Example 2</figcaption>
+    </figure> 
 </div>
