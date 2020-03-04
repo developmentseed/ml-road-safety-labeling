@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/ml-road-safety-labeling/assets/styles/main-4d7423413c.css">
+<link rel="stylesheet" href="http://devseed.com/ml-road-safety-labeling/assets/styles/main-73153a5a5d.css">
 
   </head>
   <body>
@@ -71,7 +71,7 @@
   
   <li>
       
-      <a href="http://devseed.com/ml-road-safety-labeling/introduction/introduction" title="Go to page" class="ppn__menu-item ">Introduction</a>
+      <a href="http://devseed.com/ml-road-safety-labeling/" title="Go to page" class="ppn__menu-item ppn__menu-item--active">Introduction</a>
       
 
 
@@ -94,7 +94,7 @@
   
   <li>
       
-      <a href="http://devseed.com/ml-road-safety-labeling/" title="Go to page" class="ppn__menu-item ppn__menu-item--active">Overview</a>
+      <a href="http://devseed.com/ml-road-safety-labeling/overview/overview" title="Go to page" class="ppn__menu-item ">Overview</a>
       
 
 
@@ -208,13 +208,13 @@
           <address class="page__attribution pa">
             <div class="pa__label">
               <small>In support of</small>
-              <a href="https://developmentseed.org" title="Visit">
+              <a href="https://worldbank.org" title="Visit">
                 <strong>World Bank Group</strong>
               </a>
             </div>
             
             <div class="pa__logo">
-              <a href="https://developmentseed.org" title="Visit">
+              <a href="https://worldbank.org" title="Visit">
                 <img alt="World Bank Group logo" src="http://devseed.com/ml-road-safety-labeling/assets/graphics/content/wbg-logo-hor-col-grad.png" />
               </a>
             </div>
@@ -229,8 +229,8 @@
               <div class="inner">
                 
                 <div class="inpage__headline">
-                  <p class="inpage__subtitle">Overview</p>
-                  <h1 class="inpage__title">Overview</h1>
+                  <p class="inpage__subtitle">Introduction</p>
+                  <h1 class="inpage__title">Introduction</h1>
                 </div>
 
               </div>
@@ -239,43 +239,31 @@
             <div class="inpage__body">
               <div class="inner">
                 <div class="prose prose--responsive">
-                  <h2>Road safety classes labeling</h2>
-<p>The labeling consists in drawing a bounding box around each road safety feature that can be recognized in the street view images. Some classes are directly labeled specifying the class, and others will require more context, such as specifying the class and type.</p>
-<p>It is not need to label all the images in the sequence, because most of them are same or very similar, so, label the images every certain interval.</p>
-<h3>Painted lines labeling</h3>
-<ul>
-<li>Draw a box around the road (the box should cover only the main road) and classify it as <code>painted_lines</code> with one of the following options:
-<ul>
-<li>none</li>
-<li>both</li>
-<li>center line</li>
-<li>edge line</li>
-</ul>
-</li>
-</ul>
-<h5>Especial cases</h5>
-<p><strong>1. Road intersections</strong></p>
-<p>In the road intersections, we need to evaluate the condition of the roads to decide the way of the labeling:</p>
+                  <p>The guide describes how to label road safety classes in street view images. This labeling is in support to the Road Safety program to use computer vision to detect road features for road safety audits and assesments.</p>
+<h2>Labeling tools</h2>
+<h3>Computer Vision Annotation Tool (CVAT)</h3>
+<p>We're using the CVAT labeling platform to perform the annotations. The <a href="https://github.com/opencv/cvat">CVAT</a> tools have extensively documented the annotation process. See their tool's <a href="https://github.com/opencv/cvat/blob/develop/README.md">readme guide</a> or their <a href="https://www.youtube.com/watch?v=L9_IvUIHGwM&amp;feature=youtu.be">youtube video</a>.</p>
+<p><strong>CVAT Tips</strong></p>
 <ul>
 <li>
-<p>If the roads is in the same condition, we label all roads in one bbox.</p>
+<p>Each task should only have one annotator working on it at a time. If 2 or more annotators are working on the same task, there might be problems with labels getting overwritten.</p>
 </li>
 <li>
-<p>If the roads have different characteristics, for example; one is paved and another is not, we label them as separate roads.</p>
+<p>In the CVAT tool you can use shortcuts, for instance:</p>
+<ul>
+<li>&quot;N&quot; --&gt; create a shape</li>
+<li>&quot;F&quot; --&gt; move to the next image</li>
+<li>&quot;D&quot; --&gt; move to the previous image or</li>
+<li>&quot;CTRL + S&quot; --&gt; save the work</li>
+</ul>
 </li>
 </ul>
-<div class="gallery">
-    <figure >
-        <img src="/ml-road-safety-labeling/assets/graphics/images/case1_1.jpg">
-        <figcaption> Example 1: Roads in the same conditions</figcaption>
-    </figure>
-</div>
-<p><strong>2. Painted lanes</strong></p>
-<p>In urban roads there are painted lines to indicate the lanes, consider these case as <code>painted_lines</code> and clasify it into <code>both</code> type.</p>
-<p><strong>3. Clicleway at the edge of the main road</strong></p>
-<p>Draw the bounding box around the main road, which in most of the paved roads is delimited by the painted edge line.</p>
-<h3>Restricted median and potholes labeling</h3>
-<p>Draw a box around each of these features and classify it as such.</p>
+<p>Also, you can find the full shortcuts in this <a href="https://github.com/opencv/cvat/blob/develop/cvat/apps/documentation/user_guide.md#shortcuts">web page.</a></p>
+<h3>Mapillary</h3>
+<p><a href="https://www.mapillary.com/app/">Mapillary</a> is the street-level imagery platform that we are using to obtain the street view images.</p>
+<p><strong>Mapillary Api</strong></p>
+<p>To search and obtain all the Mapillary images from the priority road segments, it is need the <a href="https://help.mapillary.com/hc/en-us/articles/115001724989-Sequence-key">Mapillary sequence key</a> and the <a href="https://help.mapillary.com/hc/en-us/articles/115001724549-Image-key">image keys</a>.</p>
+<p>DevelopmentSeed data team developed some scripts to pass the sequence keys and get the images keys in the sequences to can download them using the <a href="https://www.mapillary.com/developer/api-documentation/#retrieve-an-image-feature">Mapillary API</a>.</p>
 
                 </div>
               </div>
@@ -287,12 +275,12 @@
                   <ul>
                     <li>
                       
-                        <a href="http://devseed.com/ml-road-safety-labeling/introduction/introduction" class="pa-prev" title="View previous post"><span>Prev</span></a>
+                        <a href="#" class="pa-prev disabled" title="View previous post"><span>Prev</span></a>
                       
                     </li>
                     <li>
                       
-                        <a href="http://devseed.com/ml-road-safety-labeling/classes/center-line" class="pa-next" title="View next post"><span>Next</span></a>
+                        <a href="http://devseed.com/ml-road-safety-labeling/overview/overview" class="pa-next" title="View next post"><span>Next</span></a>
                       
                     </li>
                   </ul>
@@ -322,6 +310,6 @@
 
     <script src="http://devseed.com/ml-road-safety-labeling/assets/scripts/vendor-2fa80a543b.js"></script>
 
-<script src="http://devseed.com/ml-road-safety-labeling/assets/scripts/bundle-9f6b573fc9.js"></script>
+<script src="http://devseed.com/ml-road-safety-labeling/assets/scripts/bundle-23df8fb82b.js"></script>
   </body>
 </html>

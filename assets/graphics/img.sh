@@ -16,4 +16,4 @@ processImg () {
     fi
 }
 
-for img in images/*.png; do processImg $img; done
+for img in $PWD/images/*.png; do processImg $img; done
