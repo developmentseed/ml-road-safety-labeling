@@ -6,6 +6,8 @@ cities:
 ---
 Restricted medians include any sort of significant separation between opposing lanes, including a concrete barrier, a patch of grass or any physical separation.
 
+Draw a box around each feature and classify it as such.
+
 <div class="gallery">
     <figure >
         <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/restricted_3.jpg"></a>
