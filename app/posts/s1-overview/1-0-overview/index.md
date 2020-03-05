@@ -2,7 +2,6 @@
 title: Overview
 date: 2012-08-20
 layout: post.html
-permalink: /
 ---
 
 ## Road safety classes labeling
@@ -28,12 +27,23 @@ In the road intersections, we need to evaluate the condition of the roads to dec
 
 - If the roads is in the same condition, we label all roads in one bbox. 
 
+<div class="gallery">
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case1_1.jpg">
+        <figcaption> Example 1: Paved roads in the same conditions</figcaption>
+    </figure>
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case1_2.jpg">
+        <figcaption> Example 2: Unpaved roads in the same conditions</figcaption>
+    </figure>
+</div>
+
 - If the roads have different characteristics, for example; one is paved and another is not, we label them as separate roads.
 
 <div class="gallery">
     <figure >
-        <img src="/assets/graphics/images/case1_1.png">
-        <figcaption> Example 1: Roads in the same conditions</figcaption>
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case1_3.jpg">
+        <figcaption> Example 3: Roads in different conditions</figcaption>
     </figure>
 </div>
 
@@ -41,10 +51,31 @@ In the road intersections, we need to evaluate the condition of the roads to dec
 
 In urban roads there are painted lines to indicate the lanes, consider these case as `painted_lines` and clasify it into `both` type. 
 
+<div class="gallery">
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case2_1.jpg">
+        <figcaption> Example 1</figcaption>
+    </figure>
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case2_2.jpg">
+        <figcaption> Example 2</figcaption>
+    </figure>
+</div>
+
 **3. Clicleway at the edge of the main road**
 
 Draw the bounding box around the main road, which in most of the paved roads is delimited by the painted edge line.
 
+<div class="gallery">
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case3_1.jpg">
+        <figcaption> Example 1</figcaption>
+    </figure>
+    <figure >
+        <img src="/ml-road-safety-labeling/assets/graphics/images/case3_2.jpg">
+        <figcaption> Example 2</figcaption>
+    </figure>
+</div>
 
 ### Restricted median and potholes labeling
 

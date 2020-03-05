@@ -2,7 +2,7 @@
 title: Introduction
 date: 2012-08-20
 layout: post.html
-permalink: 
+permalink: /
 ---
 
 The guide describes how to label road safety classes in street view images. This labeling is in support to the Road Safety program to use computer vision to detect road features for road safety audits and assesments.

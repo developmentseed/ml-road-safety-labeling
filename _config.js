@@ -7,7 +7,7 @@ module.exports = {
     role: 'In support of',
     name: 'World Bank Group',
     logo: 'wbg-logo-hor-col-grad.png',
-    url: 'https://developmentseed.org'
+    url: 'https://worldbank.org'
   },
 
   sectionsMeta: {

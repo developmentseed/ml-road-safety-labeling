@@ -7,11 +7,11 @@ layout: post.html
 For roads that have centerline and edge line.
 <div class="gallery">
     <figure >
-        <a class="modal-btn"><img src="/assets/graphics/images/both_1.png"></a>
+        <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/both_1.jpg"></a>
         <figcaption> Example 1</figcaption>
     </figure> 
     <figure >
-        <a class="modal-btn"><img src="/assets/graphics/images/both_2.png"></a>
+        <a class="modal-btn"><img src="/ml-road-safety-labeling/assets/graphics/images/both_2.jpg"></a>
         <figcaption> Example 2</figcaption>
     </figure> 
 </div>
